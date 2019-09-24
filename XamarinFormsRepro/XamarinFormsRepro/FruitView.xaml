@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<my:GenericViewBase x:TypeArguments="my:FruitData" xmlns="http://xamarin.com/schemas/2014/forms"
+					xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+					xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+					xmlns:my="clr-namespace:XamarinFormsRepro;assembly=XamarinFormsRepro"
+					mc:Ignorable="d"
+					BindingContext="{x:Reference Name=View}"
+					x:Name="View"
+					x:Class="XamarinFormsRepro.FruitView">
+	<ContentView.Content>
+		<StackLayout>
+			<Label Text="{Binding DataValue}" />
+		</StackLayout>
+	</ContentView.Content>
+</my:GenericViewBase>
